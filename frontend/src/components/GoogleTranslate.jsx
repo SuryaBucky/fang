@@ -9,7 +9,7 @@ const GoogleTranslate = () => {
       new window.google.translate.TranslateElement(
         {
           pageLanguage: 'en',
-          includedLanguages: 'en,es,fr,de,it,pt,ru,zh-CN,ja,ko',
+          includedLanguages: 'en,ja,ta,es,fr,de,it,pt,ru,zh-CN,ja,ko',
           layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
           autoDisplay: false
         },
@@ -37,15 +37,15 @@ const GoogleTranslate = () => {
   }, []);
 
   return (
-    <div id="google_translate_element" className="
+    <button id="google_translate_element" className="
       inline-block 
       h-7 w-24 
       overflow-hidden
       border border-gray-300 dark:border-gray-800
       rounded-md
-      bg-white dark:bg-gray-800
+      bg-black dark:bg-gray-800
     " >
-    </div>
+    </button>
   );
 };
 
